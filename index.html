@@ -5,26 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Para Kay Denise 💌</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      background: #fff0f5;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
-      text-align: center;
-      min-height: 100vh;
     }
 
     h1 {
-      color: #c2185b;
       margin-top: 40px;
-      padding: 0 20px;
+      color: #c2185b;
+      text-align: center;
     }
 
     button {
@@ -35,8 +30,8 @@
       border-radius: 30px;
       font-size: 1rem;
       cursor: pointer;
-      transition: 0.3s ease;
-      margin: 20px 0;
+      transition: background-color 0.3s ease;
+      margin: 20px;
     }
 
     button:hover {
@@ -45,17 +40,23 @@
 
     #message {
       display: none;
-      font-size: 1rem;
-      color: #444;
       background: #ffffff;
-      padding: 20px;
-      margin: 0 20px 40px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       max-width: 800px;
-      line-height: 1.8;
+      padding: 30px;
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       text-align: left;
-      white-space: pre-line;
+      line-height: 1.8;
+      white-space: pre-wrap;
+      overflow-y: auto;
+    }
+
+    @media (max-width: 768px) {
+      #message {
+        max-width: 90%;
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
@@ -65,10 +66,10 @@
   <button onclick="showMessage()">Buksan ang Liham 💌</button>
 
   <div id="message">
-    Aking Tangi at Wagas na Sinta, Denise,
+Aking Tangi at Wagas na Sinta, Denise,
 
-    Hindi ko mahanap ang tamang simula sa liham na ito, sapagkat tila ba salat ang wika sa kayang ipinta ng damdamin—ang tuwa, ang pag-ibig, ang di-maipaliwanag na ligayang hatid ng iyong piling.
+Hindi ko mahanap ang tamang simula sa liham na ito, sapagkat tila ba salat ang wika sa kayang ipinta ng damdamin—ang tuwa, ang pag-ibig, ang di-maipaliwanag na ligayang hatid ng iyong piling.
 
-    Sinta, maligayang ika-dalawang buwan ng ating pagsinta. Hanggang ngayon, isang himala pa rin sa aking guniguni na may tayo—isang "tayo" na minsan ko lamang pinangarap ngunit ngayo’y hawak-hawak sa bisig ng katotohanan.
+Sinta, maligayang ika-dalawang buwan ng ating pagsinta. Hanggang ngayon, isang himala pa rin sa aking guniguni na may tayo—isang "tayo" na minsan ko lamang pinangarap ngunit ngayo’y hawak-hawak sa bisig ng katotohanan.
 
-    Parang kahapon lang, mga sulyap ay lihim, mga salita'y parinig, at mga damdami’y itinatago sa
+Parang kahapon lang, mga sulyap ay lihim, mga salita'y parinig, at mga damdami’y itinatago sa likod ng katahimikan. At ngayo'y heto tayo—dalawang pusong minsang nag-alinlangan, ngayo’y sabay na tum
